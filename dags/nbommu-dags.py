@@ -14,7 +14,7 @@ dag = DAG(dag_id='DAG-1',
         catchup=False
     )
 
- start = DummyOperator(task_id = 'start', dag = dag)
- end = DummyOperator(task_id = 'end', dag = dag)
+start = DummyOperator(task_id = 'start', dag = dag)
+end = DummyOperator(task_id = 'end', dag = dag)
 
 start >> end 
