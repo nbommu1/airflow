@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent { 
+     docker {
+      image 'alpine:latest'
+     }
+    } 
     stages {
         stage('Deploy to Astronomer') {
             when {
